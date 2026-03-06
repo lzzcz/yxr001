@@ -2,6 +2,8 @@
 
 int main()
 {
-    printf("Hello World!\n");
+    char s1[100];
+    scanf("%s",s1);
+    printf("%s\n",s1);
     return 0;
 }
