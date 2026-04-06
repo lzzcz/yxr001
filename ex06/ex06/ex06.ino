@@ -21,14 +21,14 @@ void loop() {
     // 【新版用法】直接通过引脚号写入，不再需要指定通道
     ledcWrite(ledPin_yellow, dutyCycle); 
     ledcWrite(ledPin_green, 255-dutyCycle);  
-    delay(10);
+    delay(7);
   }
 
   // 逐渐变暗
   for(int dutyCycle = 255; dutyCycle >= 0; dutyCycle--){
     ledcWrite(ledPin_yellow, dutyCycle); 
     ledcWrite(ledPin_green, 255-dutyCycle);   
-    delay(10);
+    delay(7);
   }
   
   Serial.println("Breathing cycle completed");

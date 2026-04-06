@@ -2,11 +2,11 @@
 
 #define TOUCH_PIN   4
 #define LED_PIN     2
-#define TOUCH_THRESHOLD 800      // 根据实际数值设为中间值，例如 (1200+160)/2=680，取800稍高
+#define TOUCH_THRESHOLD 800      
 #define DEBOUNCE_DELAY 50        // 防抖延时（毫秒）
 
 #define SPEED_LEVELS 3
-const unsigned long stepDelays[SPEED_LEVELS] = {50, 15, 5};  // 差异明显的档位
+const unsigned long stepDelays[SPEED_LEVELS] = {20, 10, 2};  // 差异明显的档位
 
 byte currentLevel = 0;
 unsigned long lastStepTime = 0;
